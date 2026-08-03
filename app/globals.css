@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.active .nav-indicator {
+  width: 4rem; /* w-16 */
+  background-color: rgb(226 232 240); /* slate-200 */
+}
+.active .nav-text {
+  color: rgb(226 232 240); /* slate-200 */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Teal text selection (slate-900 text on teal-300) */
+  ::selection {
+    background-color: rgb(94 234 212); /* teal-300 */
+    color: rgb(15 23 42); /* slate-900 */
+  }
+
+  /* Visible, teal-colored keyboard focus */
+  :focus-visible {
+    outline: 2px solid rgb(94 234 212); /* teal-300 */
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes tardis-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tardis-spin {
+  animation: tardis-spin 3s linear infinite;
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Article thumbnail placeholder">
+  <rect width="1200" height="600" fill="#1e293b"/>
+  <circle cx="240" cy="140" r="240" fill="#2dd4bf" opacity="0.08"/>
+  <circle cx="1000" cy="480" r="240" fill="#5eead4" opacity="0.06"/>
+  <rect x="320" y="120" width="560" height="360" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <rect x="320" y="120" width="560" height="44" rx="12" fill="#334155"/>
+  <circle cx="356" cy="142" r="6" fill="#ef4444"/>
+  <circle cx="382" cy="142" r="6" fill="#f59e0b"/>
+  <circle cx="408" cy="142" r="6" fill="#22c55e"/>
+  <rect x="368" y="216" width="464" height="14" rx="7" fill="#5eead4"/>
+  <rect x="368" y="252" width="200" height="12" rx="6" fill="#475569" opacity="0.8"/>
+  <rect x="368" y="296" width="440" height="10" rx="5" fill="#475569" opacity="0.7"/>
+  <rect x="368" y="320" width="412" height="10" rx="5" fill="#475569" opacity="0.7"/>
+  <rect x="368" y="344" width="456" height="10" rx="5" fill="#475569" opacity="0.7"/>
+  <rect x="368" y="396" width="220" height="16" rx="8" fill="#2dd4bf" opacity="0.9"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Article thumbnail placeholder">
+  <rect width="1200" height="600" fill="#1e293b"/>
+  <circle cx="960" cy="120" r="220" fill="#5eead4" opacity="0.10"/>
+  <circle cx="220" cy="500" r="260" fill="#5eead4" opacity="0.06"/>
+  <rect x="360" y="110" width="480" height="380" rx="12" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <rect x="360" y="110" width="480" height="14" rx="7" fill="#334155"/>
+  <rect x="360" y="144" width="480" height="2" fill="#334155"/>
+  <rect x="404" y="196" width="340" height="22" rx="6" fill="#5eead4" opacity="0.9"/>
+  <rect x="404" y="246" width="392" height="12" rx="6" fill="#94a3b8" opacity="0.8"/>
+  <rect x="404" y="272" width="360" height="12" rx="6" fill="#94a3b8" opacity="0.8"/>
+  <rect x="404" y="298" width="392" height="12" rx="6" fill="#94a3b8" opacity="0.8"/>
+  <rect x="404" y="352" width="300" height="10" rx="5" fill="#475569" opacity="0.8"/>
+  <rect x="404" y="376" width="320" height="10" rx="5" fill="#475569" opacity="0.8"/>
+  <rect x="404" y="400" width="280" height="10" rx="5" fill="#475569" opacity="0.8"/>
+</svg>
