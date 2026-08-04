@@ -5,7 +5,7 @@ import Projects from "@/app/components/Projects";
 import Sidebar from "@/app/components/Sidebar";
 import Spotlight from "@/app/components/Spotlight";
 import TardisButton from "@/app/components/TardisButton";
-import Writing from "@/app/components/Writing";
+import Certificates from "@/app/components/Certificates";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
             <About />
             <Experience />
             <Projects />
-            <Writing />
+            <Certificates />
             <Footer />
           </main>
 

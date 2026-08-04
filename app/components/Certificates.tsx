@@ -1,31 +1,31 @@
 import Image from "next/image";
-import { articles } from "@/app/data/content";
+import { certificates } from "@/app/data/content";
 import SectionHeading from "./SectionHeading";
 import { ArrowUpRightIcon } from "./icons";
 
-export default function Writing() {
+export default function Certificates() {
   return (
     <section
-      id="writing"
-      aria-label="Selected writing"
+      id="certificates"
+      aria-label="Selected certificates"
       className="mb-16 scroll-mt-24"
     >
-      <SectionHeading title="Writing" />
+      <SectionHeading title="Certificate" />
 
       <ul className="group/list">
-        {articles.map((article) => {
+        {certificates.map((certificate) => {
           // Keep the last word (glued to the arrow) in an inline-block span so
           // it stays together when the title wraps - same as ExternalLink.
-          const lastSpace = article.title.lastIndexOf(" ");
+          const lastSpace = certificate.title.lastIndexOf(" ");
           const head =
-            lastSpace === -1 ? "" : article.title.slice(0, lastSpace + 1);
+            lastSpace === -1 ? "" : certificate.title.slice(0, lastSpace + 1);
           const lastWord =
             lastSpace === -1
-              ? article.title
-              : article.title.slice(lastSpace + 1);
+              ? certificate.title
+              : certificate.title.slice(lastSpace + 1);
 
           return (
-            <li key={article.title} className="mb-12">
+            <li key={certificate.title} className="mb-12">
               <div className="group relative grid grid-cols-8 gap-4 transition-all sm:items-center sm:gap-8 md:gap-4 lg:hover:opacity-100! lg:group-hover/list:opacity-50">
                 {/* Highlight backdrop, revealed on hover (desktop only) */}
                 <div
@@ -34,7 +34,7 @@ export default function Writing() {
                 />
 
                 <Image
-                  src={article.thumbnail}
+                  src={certificate.thumbnail}
                   alt=""
                   width={200}
                   height={48}
@@ -44,14 +44,14 @@ export default function Writing() {
 
                 <div className="z-10 col-span-6">
                   <p className="-mt-1 text-sm font-semibold leading-6">
-                    {article.year}
+                    {certificate.year}
                   </p>
                   <h3 className="-mt-1">
                     <a
-                      href={article.url}
+                      href={certificate.url}
                       target="_blank"
                       rel="noreferrer noopener"
-                      aria-label={`${article.title} (opens in a new tab)`}
+                      aria-label={`${certificate.title} (opens in a new tab)`}
                       className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 group-hover:text-teal-300"
                     >
                       <span>
