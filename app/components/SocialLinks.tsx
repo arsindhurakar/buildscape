@@ -1,5 +1,5 @@
 import { socials, type SocialIcon } from "@/app/data/content";
-import { EmailIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "./icons";
+import { EmailIcon, GithubIcon, LinkedinIcon } from "./icons";
 
 const iconMap: Record<
   SocialIcon,
@@ -7,7 +7,6 @@ const iconMap: Record<
 > = {
   github: GithubIcon,
   linkedin: LinkedinIcon,
-  twitter: TwitterIcon,
   email: EmailIcon,
 };
 
