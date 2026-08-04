@@ -3,7 +3,7 @@ export type NavItem = {
   href: string;
 };
 
-export type SocialIcon = "github" | "linkedin" | "twitter" | "email";
+export type SocialIcon = "github" | "linkedin" | "email";
 
 export type SocialLink = {
   label: string;
@@ -11,7 +11,6 @@ export type SocialLink = {
   icon: SocialIcon;
 };
 
-/** A run of text; if `href` is set it renders as a slate-200 link. */
 export type TextSegment = {
   text: string;
   href?: string;
@@ -23,7 +22,6 @@ export type Job = {
   role: string;
   startDate: string;
   endDate: string;
-  /** One-paragraph summary of responsibilities/achievements. */
   description: string;
   tech: string[];
 };
@@ -33,16 +31,14 @@ export type Project = {
   description: TextSegment[];
   tech: string[];
   externalUrl: string;
-  /** Path to the project image, relative to /public. */
   image: string;
   imageAlt: string;
 };
 
-export type Article = {
+export type Certificate = {
   title: string;
   year: string;
   url: string;
-  /** Path to the article thumbnail, relative to /public. */
   thumbnail: string;
 };
 
@@ -62,21 +58,18 @@ export const siteConfig = {
   /** Archive link shown under the Projects section. */
   archiveUrl: "#",
   archiveLabel: "Project Archive",
-  /**
-   * Footer reference text. Segments with an `href` render as links.
-   */
   footerText: [
-    { text: "Loosely designed in " },
-    { text: "Figma", href: "https://www.figma.com/" },
-    { text: " and coded in " },
-    { text: "Visual Studio Code", href: "https://code.visualstudio.com/" },
-    { text: " by yours truly. Built with " },
-    { text: "Next.js", href: "https://nextjs.org/" },
+    {
+      text: "Content and development by the author. UI/UX recreated from the original portfolio by ",
+    },
+    { text: "Brittany Chiang", href: "https://brittanychiang.com/" },
+    { text: ". Built with " },
+    { text: "Next.js", href: "https://nextjs.org" },
     { text: " and " },
-    { text: "Tailwind CSS", href: "https://tailwindcss.com/" },
-    { text: ", deployed with " },
-    { text: "Vercel", href: "https://vercel.com/" },
-    { text: ". All text is set in the " },
+    { text: "Tailwind CSS", href: "https://tailwindcss.com" },
+    { text: ", deployed on " },
+    { text: "Vercel", href: "https://vercel.com" },
+    { text: ", and set in the " },
     { text: "Inter", href: "https://rsms.me/inter/" },
     { text: " typeface." },
   ] as TextSegment[],
@@ -95,7 +88,6 @@ export const navItems: NavItem[] = [
 export const socials: SocialLink[] = [
   { label: "GitHub", href: "#", icon: "github" },
   { label: "LinkedIn", href: "#", icon: "linkedin" },
-  { label: "Twitter", href: "#", icon: "twitter" },
   { label: "Email", href: "#", icon: "email" },
 ];
 
@@ -207,31 +199,13 @@ export const projects: Project[] = [
   },
 ];
 
-/* ── Writing ──────────────────────────────────────────────────────────────── */
+/* ── Certificates ──────────────────────────────────────────────────────────────── */
 
-export const articles: Article[] = [
+export const certificates: Certificate[] = [
   {
-    title: "Reflections on Building Accessible Interfaces",
-    year: "2025",
-    url: "#",
-    thumbnail: "/writing/article-1.svg",
-  },
-  {
-    title: "Designing Better Developer Tools",
-    year: "2025",
-    url: "#",
-    thumbnail: "/writing/article-2.svg",
-  },
-  {
-    title: "Notes on Performance Budgets That Stick",
-    year: "2024",
-    url: "#",
-    thumbnail: "/writing/article-3.svg",
-  },
-  {
-    title: "A Practical Guide to Design Systems",
-    year: "2024",
-    url: "#",
-    thumbnail: "/writing/article-4.svg",
+    title: "Frontend Developer (React)",
+    year: "2026",
+    url: "https://www.hackerrank.com/certificates/iframe/526627babed0",
+    thumbnail: "/certificates/certificate-1.png",
   },
 ];
