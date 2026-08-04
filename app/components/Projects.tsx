@@ -24,24 +24,36 @@ export default function Projects() {
 
               <div className="z-10 sm:order-2 sm:col-span-6">
                 <h3>
-                  <div>
-                    <a
-                      href={project.externalUrl}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      aria-label={`${project.title} (opens in a new tab)`}
-                      className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200"
-                    >
-                      <span>
-                        {project.title}
-                        <ArrowUpRightIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
-                      </span>
-                    </a>
-                  </div>
+                  <a
+                    href={project.externalUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label={`${project.title} (opens in a new tab)`}
+                    className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 group-hover:text-teal-300"
+                  >
+                    <span>
+                      {project.title}
+                      <ArrowUpRightIcon className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none" />
+                    </span>
+                  </a>
                 </h3>
 
                 <p className="mt-2 text-sm leading-normal">
-                  {project.description}
+                  {project.description.map((segment, j) =>
+                    segment.href ? (
+                      <a
+                        key={j}
+                        href={segment.href}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="font-medium text-slate-200 transition hover:text-teal-300 focus-visible:text-teal-300"
+                      >
+                        {segment.text}
+                      </a>
+                    ) : (
+                      <span key={j}>{segment.text}</span>
+                    ),
+                  )}
                 </p>
 
                 {project.tech.length > 0 && (
@@ -73,7 +85,7 @@ export default function Projects() {
       <div className="mt-12">
         <a
           href={siteConfig.archiveUrl}
-          className="group inline-flex items-center font-medium leading-tight text-teal-300 focus-visible:text-teal-300"
+          className="group inline-flex items-center font-medium leading-tight text-slate-200 hover:text-teal-300"
         >
           <span>{siteConfig.archiveLabel}</span>
           <ArrowRightIcon className="ml-2 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" />

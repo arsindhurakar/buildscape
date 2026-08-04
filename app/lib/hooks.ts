@@ -44,7 +44,7 @@ export function usePrefersReducedMotion(): boolean {
       return () => query.removeEventListener("change", onChange);
     },
     () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-    // Server/prerender snapshot — no motion preference assumed.
+    // Server/prerender snapshot - no motion preference assumed.
     () => false,
   );
 }
