@@ -2,14 +2,25 @@
 
 @theme inline {
   --font-sans: var(--font-inter);
+
+  --color-bg: rgb(2 6 23); /* slate-950 */
+  --color-surface: rgb(15 23 42); /* slate-900 */
+
+  --color-text: rgb(248 250 252); /* slate-50 */
+  --color-text-muted: rgb(148 163 184); /* slate-400 */
+
+  --color-accent: rgb(45 212 191); /* teal-400 */
+  --color-accent-light: rgb(94 234 212); /* teal-300 */
+  --color-accent-dark: rgb(4 47 46); /* teal-950 */
 }
 
 .active .nav-indicator {
-  width: 4rem; /* w-16 */
-  background-color: rgb(226 232 240); /* slate-200 */
+  width: 4rem;
+  background-color: var(--color-accent);
 }
+
 .active .nav-text {
-  color: rgb(226 232 240); /* slate-200 */
+  color: var(--color-text);
 }
 
 @layer base {
@@ -19,21 +30,23 @@
 
   body {
     font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
 
-  /* Teal text selection (slate-900 text on teal-300) */
   ::selection {
-    background-color: rgb(94 234 212); /* teal-300 */
-    color: rgb(15 23 42); /* slate-900 */
+    background-color: var(--color-accent);
+    color: var(--color-accent-dark);
   }
 
-  /* Visible, teal-colored keyboard focus */
   :focus-visible {
-    outline: 2px solid rgb(94 234 212); /* teal-300 */
+    outline: 2px solid var(--color-accent);
     outline-offset: 2px;
-    border-radius: 2px;
+    border-radius: 4px;
   }
 }
 
@@ -47,11 +60,12 @@
   animation: tardis-spin 3s linear infinite;
 }
 
-/* Accessibility: reduce motion */
+/* Respect reduced-motion preferences */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {

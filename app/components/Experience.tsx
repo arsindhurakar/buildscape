@@ -24,7 +24,7 @@ export default function Experience() {
                 aria-label={`${job.startDate} to ${job.endDate}`}
                 className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
               >
-                {job.startDate} — {job.endDate}
+                {job.startDate} - {job.endDate}
               </header>
 
               <div className="z-10 sm:col-span-6">
@@ -34,7 +34,7 @@ export default function Experience() {
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label={`${job.role} at ${job.company} (opens in a new tab)`}
-                    className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200"
+                    className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 group-hover:text-teal-300"
                   >
                     <span>
                       {job.role} ·{" "}

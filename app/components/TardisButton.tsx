@@ -64,7 +64,7 @@ export default function TardisButton() {
         />
 
         <p className="text-sm leading-relaxed">
-          Allons-y! The Tardis can take you anywhere in time and space — for now
+          Allons-y! The Tardis can take you anywhere in time and space - for now
           it settles for touring this page.
         </p>
 

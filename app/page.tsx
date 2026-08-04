@@ -20,7 +20,10 @@ export default function Home() {
 
         <div className="lg:flex lg:justify-between lg:gap-4">
           <Sidebar />
-          <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
+          <main
+            id="content"
+            className="pt-24 lg:w-[52%] lg:py-24 flex flex-col gap-12"
+          >
             <About />
             <Experience />
             <Projects />
@@ -28,7 +31,7 @@ export default function Home() {
             <Footer />
           </main>
 
-          {/* Anchors to the `relative` page wrapper — bottom-right of the viewport */}
+          {/* Anchors to the `relative` page wrapper - bottom-right of the viewport */}
           <TardisButton />
         </div>
       </div>

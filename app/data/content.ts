@@ -30,7 +30,7 @@ export type Job = {
 
 export type Project = {
   title: string;
-  description: string;
+  description: TextSegment[];
   tech: string[];
   externalUrl: string;
   /** Path to the project image, relative to /public. */
@@ -49,18 +49,19 @@ export type Article = {
 /* ── Global / metadata ────────────────────────────────────────────────────── */
 
 export const siteConfig = {
-  name: "Your Name",
+  name: "Amin Sindhurakar",
   role: "Frontend Engineer",
-  tagline: "I build accessible, pixel-perfect experiences for the web.",
+  tagline:
+    "I build fast, accessible, and thoughtfully crafted web experiences.",
   email: "hello@example.com",
   /** Absolute URL for metadata / Open Graph. Update before deploying. */
   siteUrl: "https://your-domain.com",
   /** Resume link shown under the Experience section. */
   resumeUrl: "#",
-  resumeLabel: "View Full Résumé",
+  resumeLabel: "Resume",
   /** Archive link shown under the Projects section. */
   archiveUrl: "#",
-  archiveLabel: "View Full Project Archive",
+  archiveLabel: "Project Archive",
   /**
    * Footer reference text. Segments with an `href` render as links.
    */
@@ -103,21 +104,24 @@ export const socials: SocialLink[] = [
 export const aboutParagraphs: TextSegment[][] = [
   [
     {
-      text: "Hi there! I'm a frontend engineer who enjoys building clean, thoughtful interfaces for the web. I care about the small details — the ones that make software feel effortless, accessible, and a little bit polished.",
+      text: "I'm a frontend engineer based in Kathmandu with nearly five years of experience building web applications using React and Angular. Currently, I work as a Frontend Software Engineer at ",
+    },
+    {
+      text: "Novelty Technology LLC",
+      href: "https://noveltytechnology.com/",
+    },
+    {
+      text: ", where I build and maintain client-facing applications for businesses across a range of industries. I enjoy creating interfaces that feel fast, intuitive, and reliable while keeping the codebase maintainable for the people working on it next.",
     },
   ],
   [
     {
-      text: "My focus is on writing maintainable code, following design systems closely, and turning ambiguous requirements into shipped, working software. I'm comfortable across the stack but happiest close to the pixels — and I'm always learning better ways to ",
-    },
-    { text: "build for the web", href: "#" },
-    {
-      text: ".",
+      text: "Most of my work has involved building customer-facing products, integrating APIs, improving performance, and collaborating with designers and backend engineers throughout the development process. Recently, I've been expanding my backend knowledge with Node.js while building personal projects in Next.js and TypeScript.",
     },
   ],
   [
     {
-      text: "When I'm not coding, I'm usually reading about design, tinkering with side projects, or exploring new tools to add to my workflow.",
+      text: "When I'm away from work, I'm usually experimenting with new tools, refining side projects, or learning something that helps me become a better engineer.",
     },
   ],
 ];
@@ -126,44 +130,34 @@ export const aboutParagraphs: TextSegment[][] = [
 
 export const experience: Job[] = [
   {
-    company: "Company A",
-    companyUrl: "#",
-    role: "Senior Software Engineer",
-    startDate: "2022",
+    company: "Novelty Technology LLC",
+    companyUrl: "https://www.noveltytechnology.com",
+    role: "Software Engineer",
+    startDate: "2021",
     endDate: "Present",
     description:
-      "Lead the development of a design-system-powered marketing site, improving Lighthouse scores and SEO. Mentor junior engineers, introduce code-review and testing conventions across the frontend team, and partner with design to ship pixel-perfect, accessible UI components used across multiple products.",
-    tech: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+      "Built and maintained client-facing web applications using React and Angular, delivering scalable, responsive interfaces from initial development through ongoing enhancements. Collaborated closely with designers, backend engineers, and stakeholders to ship high-quality features while improving performance, maintainability, and overall user experience.",
+    tech: ["React", "Angular", "TypeScript", "Tailwind CSS", "REST APIs"],
   },
   {
-    company: "Company B",
-    companyUrl: "#",
-    role: "Software Engineer",
-    startDate: "2020",
-    endDate: "2022",
+    company: "PrismaSofts Pvt. Ltd.",
+    companyUrl: "https://prismasofts.com.np/",
+    role: "Developer",
+    startDate: "Apr",
+    endDate: "Nov 2021",
     description:
-      "Build and maintain customer-facing dashboards and internal tools using React and Node.js. Ship performance and accessibility improvements, reducing load times and passing WCAG checks, while collaborating cross-functionally to scope, design, and deliver new features on a rapid cadence.",
-    tech: ["JavaScript", "React", "Node.js", "GraphQL"],
+      "Developed and enhanced web applications by building intuitive user interfaces, implementing backend functionality, and delivering features that balanced user needs with business requirements. Worked closely with a small, agile team to ship high-quality software and continuously improve the product.",
+    tech: ["React", "JavaScript", "Firebase", "Cloud Firestore"],
   },
   {
-    company: "Company C",
-    companyUrl: "#",
+    company: "Next Nepal Pvt .Ltd",
+    companyUrl: "https://www.linkedin.com/company/nextnepal/about/",
     role: "Frontend Developer",
-    startDate: "2019",
-    endDate: "2020",
+    startDate: "Feb",
+    endDate: "Mar 2021",
     description:
-      "Develop responsive, animated interfaces for marketing and product pages. Work with the design team to establish reusable component patterns and style guides, and contribute to a culture of clean, readable code.",
-    tech: ["JavaScript", "TypeScript", "Sass"],
-  },
-  {
-    company: "Company D",
-    companyUrl: "#",
-    role: "Junior Developer",
-    startDate: "2018",
-    endDate: "2019",
-    description:
-      "Fix bugs, write unit tests, and assist with feature development across the frontend codebase while learning modern JavaScript practices, version control, and agile workflows.",
-    tech: ["JavaScript", "HTML", "CSS"],
+      "Maintained web applications using Angular, building responsive and user-centric interfaces. Partnered with cross-functional teams to deliver high-quality features and contributed to the design process through Figma by assisting with UI designs, design refinements, and maintaining consistency between design and implementation.",
+    tech: ["Angular", "TypeScript", "Figma", "SCSS"],
   },
 ];
 
@@ -171,40 +165,45 @@ export const experience: Job[] = [
 
 export const projects: Project[] = [
   {
-    title: "Project One",
-    description:
-      "A polished, fully responsive web application — placeholder copy for your own project. Swap in your title, description, screenshots, and links here.",
-    tech: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    externalUrl: "#",
-    image: "/projects/project-1.svg",
+    title: "Elevated Care Narrative",
+    description: [
+      {
+        text: "A modern digital presence for a medical professional, showcasing qualifications, specialties, and clinical experience.",
+      },
+    ],
+    tech: ["Next.js", "TypeScript", "Shadcn"],
+    externalUrl: "https://www.drsonysherpa.com.np/",
+    image: "/projects/project-1.png",
     imageAlt: "Screenshot placeholder for Project One",
   },
   {
-    title: "Project Two",
-    description:
-      "Another project slot with a screenshot of your favorite work and a one-paragraph story. Placeholder copy lives here until you replace it.",
-    tech: ["TypeScript", "Node.js", "GraphQL", "PostgreSQL"],
-    externalUrl: "#",
-    image: "/projects/project-2.svg",
+    title: "Kathmandu Studio",
+    description: [
+      {
+        text: "Initial prototype for a creative studio and digital marketing company, translating early concepts into a web experience before the product underwent a complete UI/UX redesign. ",
+      },
+      {
+        text: "Current production site",
+        href: "https://www.kathmandustudio.com/",
+      },
+      { text: ": Redesigned after the prototype phase." },
+    ],
+    tech: ["Next.js", "Google Analytics 4", "Meta Pixel"],
+    externalUrl: "https://kathmandustudio.vercel.app",
+    image: "/projects/project-2.png",
     imageAlt: "Screenshot placeholder for Project Two",
   },
   {
-    title: "Project Three",
-    description:
-      "A small utility that makes a boring, everyday web task less annoying. A one-line description lives here.",
-    tech: ["JavaScript", "Vite"],
+    title: "Aura Store",
+    description: [
+      {
+        text: "Inventory management solution, streamlining product management, inventory tracking, and operational workflows.",
+      },
+    ],
+    tech: ["Next.js", "Node.js", "Prisma", "Supabase"],
     externalUrl: "#",
-    image: "/projects/project-3.svg",
+    image: "/projects/project-3.png",
     imageAlt: "Screenshot placeholder for Project Three",
-  },
-  {
-    title: "Project Four",
-    description:
-      "A component library with accessible, themed primitives you can drop into any project. Placeholder copy lives here until you replace it.",
-    tech: ["TypeScript", "React"],
-    externalUrl: "#",
-    image: "/projects/project-4.svg",
-    imageAlt: "Screenshot placeholder for Project Four",
   },
 ];
 
