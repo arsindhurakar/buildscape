@@ -9,7 +9,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const title = `${siteConfig.name} — ${siteConfig.role}`;
+const title = `${siteConfig.name} - ${siteConfig.role}`;
 
 export const metadata: Metadata = {
   title,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0f172a",
+  themeColor: "#0B1120",
 };
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <body className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+      <body className="bg-[#0B1120] leading-relaxed text-slate-400 leading-relaxed antialiased selection:bg-blue-400 selection:text-teal-900">
         {children}
       </body>
     </html>

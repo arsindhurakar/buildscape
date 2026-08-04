@@ -15,7 +15,7 @@ export default function Writing() {
       <ul className="group/list">
         {articles.map((article) => {
           // Keep the last word (glued to the arrow) in an inline-block span so
-          // it stays together when the title wraps — same as ExternalLink.
+          // it stays together when the title wraps - same as ExternalLink.
           const lastSpace = article.title.lastIndexOf(" ");
           const head =
             lastSpace === -1 ? "" : article.title.slice(0, lastSpace + 1);
@@ -52,7 +52,7 @@ export default function Writing() {
                       target="_blank"
                       rel="noreferrer noopener"
                       aria-label={`${article.title} (opens in a new tab)`}
-                      className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200"
+                      className="group/link inline-flex items-baseline text-base font-medium leading-tight text-slate-200 group-hover:text-teal-300"
                     >
                       <span>
                         {head}

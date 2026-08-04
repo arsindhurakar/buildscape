@@ -13,6 +13,7 @@ export default function About() {
                 <a
                   key={j}
                   href={segment.href}
+                  target="_blank"
                   className="font-medium text-slate-200 transition hover:text-teal-300 focus-visible:text-teal-300"
                 >
                   {segment.text}

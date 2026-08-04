@@ -23,7 +23,7 @@ export default function ExternalLink({
       target="_blank"
       rel="noreferrer noopener"
       aria-label={ariaLabel ?? `${label} (opens in a new tab)`}
-      className={`group/link inline-flex items-baseline font-medium leading-tight text-slate-200 text-base ${className}`}
+      className={`group/link inline-flex items-baseline font-medium leading-tight text-slate-200 text-base hover:text-teal-300 ${className}`}
     >
       <span>
         {head}
