@@ -1,5 +1,5 @@
 import { socials, type SocialIcon } from "@/app/data/content";
-import { EmailIcon, GithubIcon, LinkedinIcon } from "./icons";
+import { EmailIcon, GithubIcon, CodepenIcon, LinkedinIcon } from "./icons";
 
 const iconMap: Record<
   SocialIcon,
@@ -7,6 +7,7 @@ const iconMap: Record<
 > = {
   github: GithubIcon,
   linkedin: LinkedinIcon,
+  codepen: CodepenIcon,
   email: EmailIcon,
 };
 
@@ -26,7 +27,7 @@ export default function SocialLinks({
           <li key={social.label} className="mr-5 shrink-0 text-xs">
             <a
               href={social.href}
-              className="block transition-colors hover:text-slate-200 focus-visible:text-slate-200"
+              className="block transition-colors hover:text-teal-300 focus-visible:text-slate-200"
               target="_blank"
               rel="noreferrer noopener"
               aria-label={`${social.label} (opens in a new tab)`}

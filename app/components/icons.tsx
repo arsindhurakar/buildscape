@@ -56,12 +56,28 @@ export function LinkedinIcon(props: IconProps) {
   );
 }
 
+export function CodepenIcon(props: IconProps) {
+  return (
+    <FillIcon {...props}>
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M11.372.19c.38-.253.875-.253 1.256 0L23.492 7.4c.317.21.508.565.508.946v7.308c0 .38-.19.736-.508.947l-10.864 7.21c-.38.252-.875.252-1.256 0L.508 16.6A1.14 1.14 0 0 1 0 15.654V8.346c0-.38.19-.736.508-.947zm-9.1 10.273v3.058l2.288-1.54zm4.337 2.878L3.18 15.648l7.684 5.1v-4.583zm6.527 2.824v4.582l7.684-5.1l-3.43-2.306zm6.304-4.183l2.288 1.54v-3.06zm1.37-3.636l-3.41 2.263l-4.264-2.868V3.253zm-9.946-5.093V7.74l-4.263 2.868L3.19 8.346zM12 9.715l-3.35 2.254L12 14.192l3.35-2.223z"
+        clipRule="evenodd"
+      ></path>
+    </FillIcon>
+  );
+}
+
 export function EmailIcon(props: IconProps) {
   return (
-    <StrokeIcon {...props}>
-      <rect x="2" y="4" width="20" height="16" rx="2" />
-      <path d="m22 7-10 6L2 7" />
-    </StrokeIcon>
+    <FillIcon {...props}>
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        fill="currentColor"
+        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64L12 9.548l6.545-4.91l1.528-1.145C21.69 2.28 24 3.434 24 5.457"
+      />
+    </FillIcon>
   );
 }
 
