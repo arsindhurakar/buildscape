@@ -4,7 +4,6 @@ import Footer from "@/app/components/Footer";
 import Projects from "@/app/components/Projects";
 import Sidebar from "@/app/components/Sidebar";
 import Spotlight from "@/app/components/Spotlight";
-import TardisButton from "@/app/components/TardisButton";
 import Certificates from "@/app/components/Certificates";
 
 export default function Home() {
@@ -31,8 +30,7 @@ export default function Home() {
             <Footer />
           </main>
 
-          {/* Anchors to the `relative` page wrapper - bottom-right of the viewport */}
-          <TardisButton />
+          {/* <TardisButton /> */}
         </div>
       </div>
     </Spotlight>
