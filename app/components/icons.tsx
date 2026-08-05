@@ -2,27 +2,6 @@ type IconProps = {
   className?: string;
 };
 
-function StrokeIcon({
-  className = "h-5 w-5",
-  children,
-}: IconProps & { children: React.ReactNode }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={1.6}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      {children}
-    </svg>
-  );
-}
-
 function FillIcon({
   className = "h-5 w-5",
   children,
