@@ -3,7 +3,7 @@ export type NavItem = {
   href: string;
 };
 
-export type SocialIcon = "github" | "linkedin" | "email";
+export type SocialIcon = "github" | "linkedin" | "codepen" | "email";
 
 export type SocialLink = {
   label: string;
@@ -86,9 +86,18 @@ export const navItems: NavItem[] = [
 /* ── Social links ─────────────────────────────────────────────────────────── */
 
 export const socials: SocialLink[] = [
-  { label: "GitHub", href: "#", icon: "github" },
-  { label: "LinkedIn", href: "#", icon: "linkedin" },
-  { label: "Email", href: "#", icon: "email" },
+  { label: "GitHub", href: "https://github.com/arsindhurakar", icon: "github" },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/amin-sindhurakar-b5007b15b/",
+    icon: "linkedin",
+  },
+  {
+    label: "Codepen",
+    href: "#",
+    icon: "codepen",
+  },
+  { label: "Email", href: "mailto:arsindhurakar@gmail.com", icon: "email" },
 ];
 
 /* ── About ────────────────────────────────────────────────────────────────── */
