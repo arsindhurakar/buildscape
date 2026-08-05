@@ -174,7 +174,7 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "TypeScript", "Shadcn"],
     externalUrl: "https://www.drsonysherpa.com.np/",
-    image: "/projects/project-1.png",
+    image: "/images/projects/project-1.png",
     imageAlt: "Screenshot placeholder for Project One",
   },
   {
@@ -191,7 +191,7 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "Google Analytics 4", "Meta Pixel"],
     externalUrl: "https://kathmandustudio.vercel.app",
-    image: "/projects/project-2.png",
+    image: "/images/projects/project-2.png",
     imageAlt: "Screenshot placeholder for Project Two",
   },
   {
@@ -203,7 +203,7 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "Node.js", "Prisma", "Supabase"],
     externalUrl: "#",
-    image: "/projects/project-3.png",
+    image: "/images/projects/project-3.png",
     imageAlt: "Screenshot placeholder for Project Three",
   },
 ];
@@ -215,6 +215,12 @@ export const certificates: Certificate[] = [
     title: "Frontend Developer (React)",
     year: "2026",
     url: "https://www.hackerrank.com/certificates/iframe/526627babed0",
-    thumbnail: "/certificates/certificate-1.png",
+    thumbnail: "/images/certificates/certificate-1.png",
+  },
+  {
+    title: "JavaScript (Intermediate)",
+    year: "2026",
+    url: "https://www.hackerrank.com/certificates/iframe/fdc0dec65b6a",
+    thumbnail: "/images/certificates/certificate-2.png",
   },
 ];
