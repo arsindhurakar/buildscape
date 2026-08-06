@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { siteConfig } from "@/app/data/content";
 
@@ -58,7 +57,6 @@ export default function RootLayout({
       <body className="bg-[#0B1120] leading-relaxed text-slate-400 leading-relaxed antialiased selection:bg-blue-400 selection:text-teal-900">
         {children}
       </body>
-      <GoogleAnalytics gaId={siteConfig.gaId} />
     </html>
   );
 }
