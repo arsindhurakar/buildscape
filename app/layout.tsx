@@ -15,6 +15,19 @@ export const metadata: Metadata = {
   title,
   description: siteConfig.tagline,
   metadataBase: new URL(siteConfig.siteUrl),
+  alternates: {
+    canonical: "/",
+  },
+  authors: [{ name: siteConfig.name, url: siteConfig.siteUrl }],
+  keywords: [
+    "frontend engineer",
+    "react",
+    "next.js",
+    "typescript",
+    "web developer",
+    "portfolio",
+    "kathmandu",
+  ],
   openGraph: {
     title,
     description: siteConfig.tagline,
