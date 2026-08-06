@@ -52,6 +52,7 @@ export const siteConfig = {
   email: "hello@example.com",
   /** Absolute URL for metadata / Open Graph / sitemap. */
   siteUrl: "https://aminrs.com.np",
+  gaId: "G-CB9J10YXDP",
   /** Resume link shown under the Experience section. */
   resumeUrl: "#",
   resumeLabel: "Resume",
