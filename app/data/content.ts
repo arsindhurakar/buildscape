@@ -50,8 +50,8 @@ export const siteConfig = {
   tagline:
     "I build fast, accessible, and thoughtfully crafted web experiences.",
   email: "hello@example.com",
-  /** Absolute URL for metadata / Open Graph. Update before deploying. */
-  siteUrl: "https://your-domain.com",
+  /** Absolute URL for metadata / Open Graph / sitemap. */
+  siteUrl: "https://aminrs.com.np",
   /** Resume link shown under the Experience section. */
   resumeUrl: "#",
   resumeLabel: "Resume",
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Shadcn"],
     externalUrl: "https://www.drsonysherpa.com.np/",
     image: "/images/projects/project-1.png",
-    imageAlt: "Screenshot placeholder for Project One",
+    imageAlt: "Elevated Care Narrative — Medical Professional",
   },
   {
     title: "Kathmandu Studio",
@@ -192,7 +192,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Google Analytics 4", "Meta Pixel"],
     externalUrl: "https://kathmandustudio.vercel.app",
     image: "/images/projects/project-2.png",
-    imageAlt: "Screenshot placeholder for Project Two",
+    imageAlt: "Kathmandu Studio - Prototype",
   },
   {
     title: "Aura Store",
@@ -204,7 +204,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "Node.js", "Prisma", "Supabase"],
     externalUrl: "#",
     image: "/images/projects/project-3.png",
-    imageAlt: "Screenshot placeholder for Project Three",
+    imageAlt: "Aura Store - Build",
   },
 ];
 

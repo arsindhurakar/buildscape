@@ -10,7 +10,7 @@ export default function Certificates() {
       aria-label="Selected certificates"
       className="mb-16 scroll-mt-24"
     >
-      <SectionHeading title="Certificate" />
+      <SectionHeading title="Certificates" />
 
       <ul className="group/list">
         {certificates.map((certificate) => {
