@@ -135,7 +135,7 @@ export const experience: Job[] = [
     company: "Novelty Technology LLC",
     companyUrl: "https://www.noveltytechnology.com",
     role: "Software Engineer",
-    startDate: "2021",
+    startDate: "Nov 2021",
     endDate: "Present",
     description:
       "Built and maintained client-facing web applications using React and Angular, delivering scalable, responsive interfaces from initial development through ongoing enhancements. Collaborated closely with designers, backend engineers, and stakeholders to ship high-quality features while improving performance, maintainability, and overall user experience.",
@@ -144,8 +144,8 @@ export const experience: Job[] = [
   {
     company: "PrismaSofts Pvt. Ltd.",
     companyUrl: "https://prismasofts.com.np/",
-    role: "Developer",
-    startDate: "Apr",
+    role: "Web Developer",
+    startDate: "May",
     endDate: "Nov 2021",
     description:
       "Developed and enhanced web applications by building intuitive user interfaces, implementing backend functionality, and delivering features that balanced user needs with business requirements. Worked closely with a small, agile team to ship high-quality software and continuously improve the product.",
@@ -156,7 +156,7 @@ export const experience: Job[] = [
     companyUrl: "https://www.linkedin.com/company/nextnepal/about/",
     role: "Frontend Developer",
     startDate: "Feb",
-    endDate: "Mar 2021",
+    endDate: "Apr 2021",
     description:
       "Maintained web applications using Angular, building responsive and user-centric interfaces. Partnered with cross-functional teams to deliver high-quality features and contributed to the design process through Figma by assisting with UI designs, design refinements, and maintaining consistency between design and implementation.",
     tech: ["Angular", "TypeScript", "Figma", "SCSS"],

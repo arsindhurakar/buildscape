@@ -3,14 +3,14 @@ import { certificates } from "@/app/data/content";
 import SectionHeading from "./SectionHeading";
 import { ArrowUpRightIcon } from "./icons";
 
-export default function Certificates() {
+export default function Certifications() {
   return (
     <section
-      id="certificates"
+      id="certifications"
       aria-label="Selected certificates"
       className="mb-16 scroll-mt-24"
     >
-      <SectionHeading title="Certificates" />
+      <SectionHeading title="Certifications" />
 
       <ul className="group/list">
         {certificates.map((certificate) => {
