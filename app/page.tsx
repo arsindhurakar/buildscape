@@ -1,8 +1,8 @@
 import About from "@/app/components/About";
 import Experience from "@/app/components/Experience";
-import Certifications from "@/app/components/Certifications";
 import Footer from "@/app/components/Footer";
 import Projects from "@/app/components/Projects";
+import Certifications from "@/app/components/Certifications";
 import Sidebar from "@/app/components/Sidebar";
 import Spotlight from "@/app/components/Spotlight";
 
