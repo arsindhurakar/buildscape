@@ -53,7 +53,7 @@ export const siteConfig = {
   /** Absolute URL for metadata / Open Graph / sitemap. */
   siteUrl: "https://aminrs.com.np",
   /** Resume link shown under the Experience section. */
-  resumeUrl: "#",
+  resumeUrl: "/pdf/resume.pdf",
   resumeLabel: "Resume",
   /** Archive link shown under the Projects section. */
   archiveUrl: "#",
