@@ -54,7 +54,7 @@ export const siteConfig = {
   siteUrl: "https://aminrs.com.np",
   gaId: "G-CB9J10YXDP",
   /** Resume link shown under the Experience section. */
-  resumeUrl: "/pdf/resume.pdf",
+  resumeUrl: "/resume.pdf",
   resumeLabel: "Resume",
   /** Archive link shown under the Projects section. */
   archiveUrl: "#",
