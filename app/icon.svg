@@ -1,0 +1,19 @@
+<svg
+    id="hexagon"
+    viewBox="0 0 100 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <rect width="100" height="100" rx="22" fill="#020617" />
+    <g
+        transform="translate(50 50) scale(0.9 0.85) translate(-50 -50)"
+        stroke="#2dd4bf"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        >
+        <path d="M 25,79 L 60,7" />
+        <path d="M 60,7 L 60,93" />
+        <path d="M 37,54 L 75,44" />
+    </g>
+</svg>
