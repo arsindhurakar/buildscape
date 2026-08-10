@@ -94,7 +94,7 @@ export const socials: SocialLink[] = [
   },
   {
     label: "Codepen",
-    href: "#",
+    href: "https://codepen.io/Amin-Sindhurakar",
     icon: "codepen",
   },
   { label: "Email", href: "mailto:arsindhurakar@gmail.com", icon: "email" },
