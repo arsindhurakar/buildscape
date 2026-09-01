@@ -4,12 +4,12 @@ A modern personal portfolio website showcasing my work, skills, experience, and 
 
 ## Tech Stack
 
-* **Next.js 16** — React framework
-* **React 19** — UI library
-* **TypeScript** — Type-safe development
-* **Tailwind CSS 4** — Styling and responsive design
-* **ESLint** — Code quality and linting
-* **Vercel** — Deployment
+* **Next.js 16** - React framework
+* **React 19** - UI library
+* **TypeScript** - Type-safe development
+* **Tailwind CSS 4** - Styling and responsive design
+* **ESLint** - Code quality and linting
+* **Vercel** - Deployment
 
 ## Features
 
