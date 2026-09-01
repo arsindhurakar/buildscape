@@ -1,3 +1,6 @@
+# Buildscape
+
+A modern personal portfolio website showcasing my work, skills, experience, and selected projects as a software developer.
 
 ## Tech Stack
 
