@@ -37,6 +37,7 @@ export type Project = {
 
 export type Certificate = {
   title: string;
+  issuer?: string;
   year: string;
   url: string;
   thumbnail: string;
@@ -213,15 +214,22 @@ export const projects: Project[] = [
 
 export const certificates: Certificate[] = [
   {
+    title: "Relational Databases",
+    issuer: "University of Helsinki",
+    year: "2026",
+    url: "https://courses.mooc.fi/certificates/validate/jk37cfxva9yus3h",
+    thumbnail: "/images/certificates/certificate-1.png",
+  },
+  {
     title: "Frontend Developer (React)",
     year: "2026",
     url: "https://www.hackerrank.com/certificates/iframe/526627babed0",
-    thumbnail: "/images/certificates/certificate-1.png",
+    thumbnail: "/images/certificates/certificate-2.png",
   },
   {
     title: "JavaScript (Intermediate)",
     year: "2026",
     url: "https://www.hackerrank.com/certificates/iframe/fdc0dec65b6a",
-    thumbnail: "/images/certificates/certificate-2.png",
+    thumbnail: "/images/certificates/certificate-3.png",
   },
 ];
