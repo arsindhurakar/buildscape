@@ -46,7 +46,12 @@ export default function Certifications() {
                   <p className="-mt-1 text-sm font-semibold leading-6">
                     {certificate.year}
                   </p>
-                  <h3 className="-mt-1">
+                  {certificate.issuer && (
+                    <p className="-mt-1 text-sm font-semibold leading-6">
+                      {certificate.issuer}
+                    </p>
+                  )}
+                  <h3 className="mt-1">
                     <a
                       href={certificate.url}
                       target="_blank"
