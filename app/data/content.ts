@@ -214,7 +214,7 @@ export const projects: Project[] = [
 
 export const certificates: Certificate[] = [
   {
-    title: "Relational Databases",
+    title: "Relational Databases - 1 ECTS",
     issuer: "University of Helsinki",
     year: "2026",
     url: "https://courses.mooc.fi/certificates/validate/jk37cfxva9yus3h",
