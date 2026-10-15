@@ -22,7 +22,7 @@ export default function Projects() {
                 className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition-[background-color,box-shadow] motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
               />
 
-              <div className="z-10 sm:order-2 sm:col-span-6">
+              <div className="z-10 sm:order-2 sm:col-span-6 select-none">
                 <h3>
                   <a
                     href={project.externalUrl}
