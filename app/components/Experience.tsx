@@ -22,12 +22,12 @@ export default function Experience() {
 
               <header
                 aria-label={`${job.startDate} to ${job.endDate}`}
-                className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 select-none"
               >
                 {job.startDate} - {job.endDate}
               </header>
 
-              <div className="z-10 sm:col-span-6">
+              <div className="z-10 sm:col-span-6 select-none">
                 <h3 className="font-medium leading-snug text-slate-200">
                   <a
                     href={job.companyUrl}

@@ -3,7 +3,11 @@ import { aboutParagraphs } from "@/app/data/content";
 
 export default function About() {
   return (
-    <section id="about" aria-label="About me" className="mb-16 scroll-mt-24">
+    <section
+      id="about"
+      aria-label="About me"
+      className="mb-16 scroll-mt-24 select-none"
+    >
       <SectionHeading title="About" />
       <div className="space-y-4">
         {aboutParagraphs.map((paragraph, i) => (
