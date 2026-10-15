@@ -42,7 +42,7 @@ export default function Certifications() {
                   className="z-10 col-span-2 aspect-video rounded border-2 border-slate-200/10 object-cover transition group-hover:border-slate-200/30 sm:col-span-2"
                 />
 
-                <div className="z-10 col-span-6">
+                <div className="z-10 col-span-6 select-none">
                   <p className="-mt-1 text-sm font-semibold leading-6">
                     {certificate.year}
                   </p>
