@@ -204,7 +204,7 @@ export const projects: Project[] = [
       },
     ],
     tech: ["Next.js", "Node.js", "Prisma", "Supabase"],
-    externalUrl: "#",
+    externalUrl: "http://aura-store-next.vercel.app/",
     image: "/images/projects/project-3.png",
     imageAlt: "Aura Store - Build",
   },
