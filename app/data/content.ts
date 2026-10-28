@@ -214,22 +214,29 @@ export const projects: Project[] = [
 
 export const certificates: Certificate[] = [
   {
+    title: "Next.js - 1 ECTS",
+    issuer: "University of Helsinki",
+    year: "2026",
+    url: "https://courses.mooc.fi/certificates/validate/kzr27kuxvw3494m",
+    thumbnail: "/images/certificates/certificate-1.png",
+  },
+  {
     title: "Relational Databases - 1 ECTS",
     issuer: "University of Helsinki",
     year: "2026",
     url: "https://courses.mooc.fi/certificates/validate/jk37cfxva9yus3h",
-    thumbnail: "/images/certificates/certificate-1.png",
+    thumbnail: "/images/certificates/certificate-2.png",
   },
   {
     title: "Frontend Developer (React)",
     year: "2026",
     url: "https://www.hackerrank.com/certificates/iframe/526627babed0",
-    thumbnail: "/images/certificates/certificate-2.png",
-  },
-  {
-    title: "JavaScript (Intermediate)",
-    year: "2026",
-    url: "https://www.hackerrank.com/certificates/iframe/fdc0dec65b6a",
     thumbnail: "/images/certificates/certificate-3.png",
   },
+  // {
+  //   title: "JavaScript (Intermediate)",
+  //   year: "2026",
+  //   url: "https://www.hackerrank.com/certificates/iframe/fdc0dec65b6a",
+  //   thumbnail: "/images/certificates/certificate-4.png",
+  // },
 ];
